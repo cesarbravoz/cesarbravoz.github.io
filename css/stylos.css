@@ -194,14 +194,17 @@ background-size: cover;
 }
 /*usar animacion*/
 .heading-1{
-    animation:animarEncabezado 12s 3s infinite;
+    animation:animarEncabezado 8s 2s infinite;
 }
 
 .heading-2{
-    animation: animarEncabezado 12s 6s infinite;
+    animation: animarEncabezado 8s 4s infinite;
 }
 .heading-3{
-    animation: animarEncabezado 12s 9s infinite;
+    animation: animarEncabezado 8s 6s infinite;
+}
+.heading-4{
+    animation:animarEncabezado 8s 8s infinite;
 }
 
 /*animacion span hedding*/
