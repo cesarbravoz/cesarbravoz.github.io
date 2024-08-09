@@ -147,7 +147,8 @@ height: 100vh;
 /*closing navbar*/
 /*section 1*/
 .foto img{
-  width: 20%;
+  width: 27rem;
+  height: 25rem;
   margin-top: 6rem;
 }
 .section_1{
@@ -171,7 +172,7 @@ background-size: cover;
     height: 8rem;
     perspective: 50rem;
     overflow: hidden;
-    margin-top: 15rem;
+    margin-top: 13rem;
     margin-bottom: 0rem;
 
 }
@@ -241,15 +242,17 @@ background-size: cover;
 
 .nav-redes a img{
 
-    box-shadow: 0px 0px 6px #ddd;
-    border-radius: 60px;
+    box-shadow: 0px 0px 6px #fff;
+    border-radius: 30px;
     margin: 0.5rem;
     width: 60px;
+    background-color: var(--balnco);
     transition: all 300ms;
 }
 
 .nav-redes a img:hover{
     box-shadow: 0px 0px 6px var(--naraja);
+    background-color: var(--naraja);
     transform: scale(1.1);
 }
 .banner_paragraph{
@@ -278,3 +281,17 @@ background-size: cover;
 }
 
 /*closing section 1*/
+
+/*responsive*/
+@media(max-width:700px){
+    .banner_heading span{
+        font-size: 3rem;
+        letter-spacing: 0.7rem;
+    }
+}
+@media(max-width:590px){
+    .banner_heading span{
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+    }
+}
