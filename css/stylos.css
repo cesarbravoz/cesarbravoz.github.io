@@ -164,7 +164,9 @@ background-size: cover;
     text-align: center;
     width: 100%;
 }
-
+.mu{
+    padding-left: 10pc;
+}
 .banner_heading{
     height: 8rem;
     perspective: 50rem;
