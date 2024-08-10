@@ -325,4 +325,17 @@ box-shadow: 0px 0px 3px #ddd;
     color:var(--naraja);
 }
 /* closing section*/
+.miniaturas-skills img{
+    width: 70px;
+    margin: 10px;
+}
+.flask{
+  background-color: #ffffffa6;
+  width: 100px !important;
+  height: 70px;
+  border-radius: 10px;
+}
+.mysql{
+    margin-bottom: 35px !important;
+}
 /*open section 3*/
