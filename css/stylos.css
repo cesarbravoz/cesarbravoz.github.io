@@ -340,7 +340,7 @@ ul li{
     height: auto;
     position: relative;
     overflow: hidden;
-    display: flex;
+    display: block;
 }
 .slider-img{
     display: none;
