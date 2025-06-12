@@ -9,22 +9,21 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
-<body>
-   <div>
-    <nav class="navbar">
-        <div class="navbar-logo">
-            <a href="#"><span>c</span>esar<span>B</span>ravo</a>
-        </div>
-        <div class="nav-list">
-            <a href="#" class="nav-link">inicio</a>
-            <a href="#" class="nav-link">inicio</a>
-            <a href="#" class="nav-link">inicio</a>
-            <a href="#" class="nav-link">inicio</a>
-        </div>
-    </nav>
+<body> 
+        <header class="container-header">
+                <div class="logo col-4">
+                        <a href="#"><span>c</span>esar<span>B</span>ravo</a>
+                </div>
+                <nav class="navbar col-8 " >
+                        <a href="#inicio" class="nav-link">sobre mi</a>
+                        <a href="#habilidades" class="nav-link">habilidades</a>
+                        <a href="#formacion" class="nav-link">formacion</a> 
+                        <a href="#portafolio" class="nav-link">portafolio</a>
+                </nav>
+            </header>
 <!--section-1-->
-    <section class="section_1" id="inicio">
-        
+<div class="container-baner">
+    <section class="section_1 col-12" id="inicio">
         <div class="foto">
             <img src="/img/Clipped_image_20240809_183904.png" alt="Foto Cesar Bravo">
         </div>
@@ -36,15 +35,10 @@
                 <span class="heading-3">Desarrollador Web</span>
                 <span class="heading-4">Programador junior</span>
             </h1>
-            <div class="nav-redes">
-                <a href="https://github.com/cesarbravoz" class="linkedin" target="_blank"><img src="/img/github.png" alt="github"></a>
-                <a href="https://www.linkedin.com/in/cesar-hamilton-bravo-naranjo" class="gih" target="_blank"><img src="/img/linkedin.png" alt="linkedin"></a>
-                <a href="#" class="cv_enlace"><img src="/img/curriculum_vitae_paper_document_icon_219477.png" alt=""></a>
-            </div>
         </div>
     </section>
-<!--closing section 1-->
-<!--section 2-->
+    
+
     <main class="container">
         <h2>
             <span>S</span>obre <span>M</span>i
@@ -58,9 +52,40 @@
            optimicen tanto las ventas como la experiencia del usuario.
         </p>
     </main>
+   </div>
+<nav class="nav-redes">
+                <a href="https://github.com/cesarbravoz" class="linkedin" target="_blank">
+                    <div class="iconos">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="12" fill="#000"/>
+                    <path fill="#fff" d="M12 2C6.48 2 2 6.58 2 12.26c0 4.48 2.87 8.28 6.84 9.63.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.1-1.5-1.1-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0 1 12 6.84c.85.004 1.7.12 2.5.35 1.9-1.33 2.74-1.05 2.74-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.8-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.8 0 .26.18.57.69.47C19.13 20.54 22 16.74 22 12.26 22 6.58 17.52 2 12 2Z"/>
+                    </svg>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/cesar-hamilton-bravo-naranjo" class="gih" target="_blank">
+                    <div class="iconos">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="12" fill="#000"/>
+                    <path fill="#fff" d="M7.75 9.5a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5ZM6.5 10.75h2.5v7h-2.5v-7ZM12.25 10.75h2.4v.89c.33-.63 1.18-1.02 1.85-1.02 1.44 0 2.25.94 2.25 2.67v4.46h-2.5v-4.01c0-.7-.25-1.13-.87-1.13-.47 0-.75.32-.87.62-.05.12-.06.29-.06.46v4.06h-2.5v-7Z"/>
+                    </svg>
+                    </div>
+                </a>
+                <a href="#" class="cv_enlace">
+                    <!-- Icono CV/Documento redondeado blanco y negro -->
+                     <div class="iconos">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="12" fill="#000"/>
+                    <rect x="7" y="6" width="10" height="12" rx="2" fill="#fff"/>
+                    <rect x="9" y="8" width="6" height="1.2" rx="0.6" fill="#000"/>
+                    <rect x="9" y="10.5" width="6" height="1.2" rx="0.6" fill="#000"/>
+                    <rect x="9" y="13" width="4" height="1.2" rx="0.6" fill="#000"/>
+                    </svg>
+                    </div>
+                </a>
+            </nav>
 <!--closing section 2-->
 <!--open sction 3 skills-->
- <section class="container"> 
+ <section class="container padding100" id="habilidades"> 
     <h2>
         <span>H</span>abilidades
     </h2>
@@ -81,59 +106,79 @@
         <li>Diseño Gráfico: Photoshop</li>
         <li>Automatización de Procesos: Integración de APIs</li>
     </ul>
-</p>
+    </p>
  </section>
-<!--closing section 3 skills-->
+  <section id="formacion" class="container padding100">
+        <h2>
+            <span>F</span>ormación
+        </h2>
+        <div class="formacion-lista">
+            <ul>
+                <li>Analisis y desarrollo de sistemas de la informacion - SENA(2021-2024)</li>
+                <li>Comportamiento Emprendedor - SENA (2022)</li>
+                <li>English Dot Works Beginner - SENA (2022)</li>
+                <li>Curso de PrestaShop para eCommerce - Udemy (2023)</li>
+                <li>Curso de Google Ads - Google (2023)</li>
+                <li>Confeccion y publicacion de paginas web - CEBANC Cursando..</li>
+            </ul>
+        </div>
 
-<!--open section4-->
+  </section>
 
-    <section class="container" id="section4"> 
+    <section class="container padding100" id="portafolio"> 
         <h2>
             <span>M</span>is <span>P</span>royectos
         </h2>
         <div class="miniaturas">
+            <a href="#presucosto" class="miniatura">
             <img src="/img/logo-presucosto.png" alt="Logo de presucosto su nombre presu en mayusculas y costo en minusculas" class="imagenes-skill">
-        </div>
-         <hr>
-            <h2>
-                <span>P</span>resu<span>C</span>osto
-            </h2>
-    <hr>
+            </a> 
+       </div>
     </section>
    
-    <section class="contenedor-slider">
-           <div class="slider">
-            <button class="slider-btn prev">&#10094;</button>
-            <div class="slider-img">
-                <img src="/img/presucosto/01-inicio.gif" alt="Área de registro a presucosto">
-                <p>Inicio</p>
+    <section id="presucosto" class="contenedor " style="padding-top:50px;">
+            <div>
+                    <hr>
+                    <h2>
+                    <span>P</span>resu<span>C</span>osto
+                    </h2>
+                    <hr>
             </div>
-            <div class="slider-img">
-                <img src="/img/presucosto/02-Registro.png" alt="Área de registro a presucosto">
-                <p>Panel de registro con su correo, nombre de usuario y clave. Puede fácilmente crear una cuenta.</p>
-            </div>
-            <div class="slider-img">
-                <img src="/img/presucosto/03-Validacion de formulario.png" alt="Área de inicio de sesión a presucosto">
-                <p>Validación de formulario para iniciar sesión de forma segura.</p>
-            </div>
-            <div class="slider-img">
-                <img src="/img/presucosto/04-Ingreso datos de la empresa y actualizar.png" alt="Panel de control de presucosto">
-                <p>Ingreso y actualización de datos de la empresa desde el panel de control.</p>
-            </div>
-            <div class="slider-img">
-                <img src="/img/presucosto/05-Administracion Imprevistos Utilidad.png" alt="Lista de presupuestos en presucosto">
-                <p>Administración de imprevistos y utilidades en la lista de presupuestos.</p>
-            </div>
-            <div class="slider-img">
-                <img src="/img/presucosto/06-Prestaciones.png" alt="Editar presupuesto en presucosto">
-                <p>Edición de prestaciones y detalles del presupuesto.</p>
-            </div>
-            <div class="slider-img">
-                <img src="/img/presucosto/07-Crear nueva mano de obra o modificar la existente.png" alt="Enviar presupuesto en presucosto">
-                <p>Crear o modificar mano de obra</p>
+            <div class="contenedor-slider">
+                <button class="slider-btn prev">&#10094;</button>
+                    <div class="slider">
+                            <!-- <div class="slider-img">
+                                <img src="/img/presucosto/01-inicio.gif" alt="Área de registro a presucosto">
+                                <p>Inicio</p>
+                            </div> -->
+                            <div class="slider-img">
+                                <img src="/img/presucosto/02-Registro.png" alt="Área de registro a presucosto">
+                                <p>Panel de registro con su correo, nombre de usuario y clave. Puede fácilmente crear una cuenta.</p>
+                            </div>
+                            <div class="slider-img">
+                                <img src="/img/presucosto/03-Validacion de formulario.png" alt="Área de inicio de sesión a presucosto">
+                                <p>Validación de formulario para iniciar sesión de forma segura.</p>
+                            </div>
+                            <div class="slider-img">
+                                <img src="/img/presucosto/04-Ingreso datos de la empresa y actualizar.png" alt="Panel de control de presucosto">
+                                <p>Ingreso y actualización de datos de la empresa desde el panel de control.</p>
+                            </div>
+                            <div class="slider-img">
+                                <img src="/img/presucosto/05-Administracion Imprevistos Utilidad.png" alt="Lista de presupuestos en presucosto">
+                                <p>Administración de imprevistos y utilidades en la lista de presupuestos.</p>
+                            </div>
+                            <div class="slider-img">
+                                <img src="/img/presucosto/06-Prestaciones.png" alt="Editar presupuesto en presucosto">
+                                <p>Edición de prestaciones y detalles del presupuesto.</p>
+                            </div>
+                            <div class="slider-img">
+                                <img src="/img/presucosto/07-Crear nueva mano de obra o modificar la existente.png" alt="Enviar presupuesto en presucosto">
+                                <p>Crear o modificar mano de obra</p>
+                            </div>
+                            
             </div>
             <button class="slider-btn next">&#10095;</button>
-        </div>
+            </div>
     </section>
     <section class="centrado-texto">
             <p>Presucosto es una plataforma de gestión de presupuestos que permite a los usuarios crear, editar y enviar presupuestos personalizados a sus clientes. Con una interfaz intuitiva y fácil de usar, Presucosto facilita la administración de presupuestos y mejora la comunicación con los clientes.</p>
