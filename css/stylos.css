@@ -416,8 +416,8 @@ display: flex;
     box-shadow: 0px 0px 10px rgba(252, 252, 252, 0.5);
     transition: background 0.3s, transform 0.3s;
 }
-.slider-btn.prev { left: 200px; }
-.slider-btn.next { right: 200px; }
+.slider-btn.prev { left: 7%; }
+.slider-btn.next { right: 7%; }
 
 .contenedor-slider{
   display: flex;
@@ -471,6 +471,12 @@ display: flex;
     .section_1 .foto {
           margin-top: 30px;
     }
+    .slider-btn.prev {
+    left: 6%;
+}
+.slider-btn.next {
+    right: 6%;
+}
 }
 
 
@@ -509,10 +515,10 @@ display: flex;
 
 }
 .slider-btn.prev {
-    left: 100px;
+    left: 5%;
 }
 .slider-btn.next {
-    right: 100px;
+    right: 5%;
 }
 .slider-btn {
     top: 100%;
