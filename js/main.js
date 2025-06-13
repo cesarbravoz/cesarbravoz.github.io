@@ -103,12 +103,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const expandBtn = document.querySelector('.expand-slider-btn');
     const fullscreenModal = document.getElementById('fullscreen-slider-modal');
     const closeFullscreenBtn = document.querySelector('.close-fullscreen-slider');
-    const slider = document.querySelector('.slider');
+    const slider = document.querySelector('.contenedor-slider .slider');
     const sliderFullscreen = document.querySelector('.slider-fullscreen');
 
     expandBtn.addEventListener('click', function() {
-        // Clona el contenido del slider al modal
-        sliderFullscreen.innerHTML = slider.innerHTML;
+        const activeImg = slider.querySelector('.slider-img.active');
+        if (activeImg) {
+            // Clona y asegura la clase active
+            const clone = activeImg.cloneNode(true);
+            clone.classList.add('active');
+            sliderFullscreen.innerHTML = '';
+            sliderFullscreen.appendChild(clone);
+        }
         fullscreenModal.classList.add('active');
     });
 
