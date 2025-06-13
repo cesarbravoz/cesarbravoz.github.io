@@ -85,9 +85,10 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+     }
+  .logo a{
     padding-top: 10px;
-    
-    }
+  }
 span{
     font-size: 3.5rem;
     font-weight: bold;
@@ -482,6 +483,9 @@ display: flex;
 @media (max-width: 500px){
     .container{
         width: 90%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
     }
     a.nav-link {
         font-size: 1.5rem;
@@ -498,5 +502,27 @@ display: flex;
         bottom: 10%;
         top: auto;
     }
+    
+.slider {
+    width: 100%;
+    height: 200px;
 
 }
+.slider-btn.prev {
+    left: 100px;
+}
+.slider-btn.next {
+    right: 100px;
+}
+.slider-btn {
+    top: 100%;
+    padding: 5px;
+    border-radius: 0px;
+
+}
+.slider-img p{
+bottom: 40px;
+    font-size: 1.2rem;
+    padding: 5px;
+
+}}
