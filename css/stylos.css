@@ -605,7 +605,6 @@ bottom: 40px;
         margin: 0 !important;
         padding: 0 !important;
         background: #222;
-        display: flex !important;
         align-items: center;
         justify-content: center;
         z-index: 9999;
