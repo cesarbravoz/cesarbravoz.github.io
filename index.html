@@ -1,211 +1,445 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cesar Bravo</title>
+    <meta name="description" content="César Bravo - Analista de Sistemas y Desarrollador Web especializado en eCommerce, Python, JavaScript y automatización de procesos">
+    <meta name="keywords" content="desarrollador web, analista sistemas, python, javascript, ecommerce, prestashop">
+    <meta name="author" content="César Bravo">
+    <meta property="og:title" content="César Bravo - Desarrollador Web y Analista de Sistemas">
+    <meta property="og:description" content="Especialista en desarrollo web, eCommerce y automatización de procesos">
+    <meta property="og:type" content="website">
+    <title>César Bravo - Desarrollador Web y Analista de Sistemas</title>
     <link rel="stylesheet" href="css/stylos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
-<body> 
-        <header class="container-header">
-                <div class="logo col-4">
-                        <a href="#"><span>c</span>esar<span>B</span>ravo</a>
-                </div>
-                <nav class="navbar col-8 " >
-                        <a href="#inicio" class="nav-link">sobre mi</a>
-                        <a href="#habilidades" class="nav-link">habilidades</a>
-                        <a href="#formacion" class="nav-link">formacion</a> 
-                        <a href="#portafolio" class="nav-link">portafolio</a>
-                </nav>
-            </header>
-<!--section-1-->
-<div class="container-baner">
-    <section class="section_1 col-12" id="inicio">
-        <div class="foto">
-            <img src="/img/Clipped_image_20240809_183904.png" alt="Foto Cesar Bravo">
+<<body> 
+    <!-- Header con navegación principal -->
+    <header class="container-header" role="banner">
+        <div class="container">
+            <div class="logo">
+                <a href="#" aria-label="César Bravo - Inicio"><span>c</span>ésar<span>B</span>ravo</a>
+            </div>
+            <nav class="navbar" role="navigation" aria-label="Navegación principal">
+                <a href="#inicio" class="nav-link" aria-label="Ir a sección sobre mí">sobre mí</a>
+                <a href="#habilidades" class="nav-link" aria-label="Ir a sección habilidades">habilidades</a>
+                <a href="#formacion" class="nav-link" aria-label="Ir a sección formación">formación</a> 
+                <a href="#portafolio" class="nav-link" aria-label="Ir a sección portafolio">portafolio</a>
+            </nav>
+            <!-- Botón hamburguesa para móvil -->
+            <button class="mobile-menu-btn" aria-label="Abrir menú de navegación" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-        
-        <div class="banner">
-            <h1 class="banner_heading">
-                <span class="heading-1">Cesar Bravo</span>
-                <span class="heading-2">Analista de Sistemas</span>
-                <span class="heading-3">Desarrollador Web</span>
-                <span class="heading-4">Programador junior</span>
-            </h1>
-        </div>
-    </section>
-    
+    </header>
 
-    <main class="container">
-        <h2>
-            <span>S</span>obre <span>M</span>i
-        </h2>
-        <p class="sobremi">
-           Soy César Bravo, analista y programador de sistemas especializado en la digitalización de procesos y
-           desarrollo de soluciones personalizadas. Con sólida formación en programación y diseño web,
-           tengo amplia experiencia creando soluciones innovadoras, especialmente en eCommerce con PrestaShop y
-           automatización de procesos. Además, manejo campañas en Google Ads y Facebook Ads y realizo análisis 
-           con Google Analytics. Siempre en constante aprendizaje, me enfoco en crear soluciones técnicas que
-           optimicen tanto las ventas como la experiencia del usuario.
-        </p>
-    </main>
-   </div>
-<nav class="nav-redes">
-                <a href="https://github.com/cesarbravoz" class="linkedin" target="_blank">
-                    <div class="iconos">
-                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+    <!-- Redes sociales flotantes -->
+    <aside class="nav-redes" aria-label="Enlaces a redes sociales">
+        <a href="https://github.com/cesarbravoz" class="social-link" target="_blank" 
+           rel="noopener noreferrer" aria-label="Visitar perfil de GitHub">
+            <div class="iconos">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                     <circle cx="12" cy="12" r="12" fill="#000"/>
                     <path fill="#fff" d="M12 2C6.48 2 2 6.58 2 12.26c0 4.48 2.87 8.28 6.84 9.63.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.1-1.5-1.1-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0 1 12 6.84c.85.004 1.7.12 2.5.35 1.9-1.33 2.74-1.05 2.74-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.8-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.8 0 .26.18.57.69.47C19.13 20.54 22 16.74 22 12.26 22 6.58 17.52 2 12 2Z"/>
-                    </svg>
-                    </div>
-                </a>
-                <a href="https://www.linkedin.com/in/cesar-hamilton-bravo-naranjo" class="gih" target="_blank">
-                    <div class="iconos">
-                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                </svg>
+            </div>
+        </a>
+        <a href="https://www.linkedin.com/in/cesar-hamilton-bravo-naranjo" class="social-link" target="_blank"
+           rel="noopener noreferrer" aria-label="Visitar perfil de LinkedIn">
+            <div class="iconos">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                     <circle cx="12" cy="12" r="12" fill="#000"/>
                     <path fill="#fff" d="M7.75 9.5a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5ZM6.5 10.75h2.5v7h-2.5v-7ZM12.25 10.75h2.4v.89c.33-.63 1.18-1.02 1.85-1.02 1.44 0 2.25.94 2.25 2.67v4.46h-2.5v-4.01c0-.7-.25-1.13-.87-1.13-.47 0-.75.32-.87.62-.05.12-.06.29-.06.46v4.06h-2.5v-7Z"/>
-                    </svg>
-                    </div>
-                </a>
-                <a href="#" class="cv_enlace">
-                    <!-- Icono CV/Documento redondeado blanco y negro -->
-                     <div class="iconos">
-                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                </svg>
+            </div>
+        </a>
+        <a href="#" class="social-link cv_enlace" aria-label="Descargar CV">
+            <div class="iconos">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                     <circle cx="12" cy="12" r="12" fill="#000"/>
                     <rect x="7" y="6" width="10" height="12" rx="2" fill="#fff"/>
                     <rect x="9" y="8" width="6" height="1.2" rx="0.6" fill="#000"/>
                     <rect x="9" y="10.5" width="6" height="1.2" rx="0.6" fill="#000"/>
                     <rect x="9" y="13" width="4" height="1.2" rx="0.6" fill="#000"/>
-                    </svg>
+                </svg>
+            </div>
+        </a>
+    </aside>
+
+    <!-- Sección principal tecnológica -->
+    <section class="hero-tech-section" id="inicio">
+        <div class="tech-background">
+            <div class="grid-overlay"></div>
+            <div class="particles"></div>
+        </div>
+        
+        <div class="hero-tech-container">
+            <!-- Panel de Perfil -->
+            <div class="profile-panel">
+                <div class="holographic-border">
+                    <div class="profile-photo-container">
+                        <img src="img/Clipped_image_20240809_183904.png" alt="César Bravo - Desarrollador" class="profile-photo-tech">
+                        <div class="scan-line"></div>
                     </div>
-                </a>
-            </nav>
-<!--closing section 2-->
-<!--open sction 3 skills-->
- <section class="container padding100" id="habilidades"> 
-    <h2>
-        <span>H</span>abilidades
-    </h2>
-    <div class="miniaturas-skills">
-        <img src="/img/file_type_html_icon_130541.png" alt="logo html" class="imagenes-skill">
-        <img src="/img/5351-css3_102605.png" alt="logo css" class="imagenes-skill">
-        <img src="/img/javascript_icon_130900.png" alt="logo javascrip" class="imagenes-skill">
-        <img src="/img/mysql_official_logo_icon_169938.png" alt="Logo mysql" class="mysql">
-        <img src="/img/python_104451.png" alt="logo python" class="imagenes-skill">
-        <img src="/img/pocoo_flask_logo_icon_168045.png" alt="logo flask" class="flask">
-        <img src="/img/microsoft_visual_studio_code_alt_macos_bigsur_icon_189951.png" alt="" class="imagenes-skill">
-    </div>
-    <ul>
-        <li>Desarrollo Web: HTML, CSS, JavaScript, Python</li>
-        <li>Plataformas eCommerce: PrestaShop</li>
-        <li>Marketing Digital: Google Ads, Facebook Ads</li>
-        <li>Análisis de Datos: Google Analytics</li>
-        <li>Diseño Gráfico: Photoshop</li>
-        <li>Automatización de Procesos: Integración de APIs</li>
-    </ul>
-    </p>
- </section>
-  <section id="formacion" class="container padding100">
-        <h2>
-            <span>F</span>ormación
-        </h2>
-        <div class="formacion-lista">
-            <ul>
-                <li>Analisis y desarrollo de sistemas de la informacion - SENA(2021-2024)</li>
-                <li>Comportamiento Emprendedor - SENA (2022)</li>
-                <li>English Dot Works Beginner - SENA (2022)</li>
-                <li>Curso de PrestaShop para eCommerce - Udemy (2023)</li>
-                <li>Curso de Google Ads - Google (2023)</li>
-                <li>Confeccion y publicacion de paginas web - CEBANC Cursando..</li>
-            </ul>
+                    <div class="profile-info">
+                        <h1 class="tech-name">César Bravo</h1>
+                        <div class="tech-title-container">
+                            <span class="tech-cursor">></span>
+                            <span class="tech-title" id="typewriter"></span>
+                            <span class="cursor-blink">|</span>
+                        </div>
+                        <div class="status-indicator">
+                            <span class="status-dot"></span>
+                            <span class="status-text">ONLINE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel de Información -->
+            <div class="info-panel">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <span class="terminal-title">system_info.exe</span>
+                        <div class="terminal-controls">
+                            <span class="control minimize"></span>
+                            <span class="control maximize"></span>
+                            <span class="control close"></span>
+                        </div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line">
+                            <span class="prompt">C:\Users\cesar></span>
+                            <span class="command">whoami</span>
+                        </div>
+                        <div class="terminal-output">Analista de Sistemas & Developer</div>
+                        
+                        <div class="terminal-line">
+                            <span class="prompt">C:\Users\cesar></span>
+                            <span class="command">get-skills</span>
+                        </div>
+                        <div class="terminal-output">
+                            <div class="skill-progress">
+                                <span>Python</span>
+                                <div class="progress-bar"><div class="progress-fill" data-skill="85"></div></div>
+                            </div>
+                            <div class="skill-progress">
+                                <span>JavaScript</span>
+                                <div class="progress-bar"><div class="progress-fill" data-skill="80"></div></div>
+                            </div>
+                            <div class="skill-progress">
+                                <span>Web Development</span>
+                                <div class="progress-bar"><div class="progress-fill" data-skill="90"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel de Estadísticas -->
+            <div class="stats-panel">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="2">0</div>
+                        <div class="stat-label">Años Experiencia</div>
+                        <div class="stat-icon">📈</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="5">0</div>
+                        <div class="stat-label">Proyectos</div>
+                        <div class="stat-icon">🚀</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="8">0</div>
+                        <div class="stat-label">Tecnologías</div>
+                        <div class="stat-icon">⚡</div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-  </section>
-
-    <section class="container padding100" id="portafolio"> 
-        <h2>
-            <span>M</span>is <span>P</span>royectos
-        </h2>
-        <div class="miniaturas">
-            <a href="#presucosto" class="miniatura">
-            <img src="/img/logo-presucosto.png" alt="Logo de presucosto su nombre presu en mayusculas y costo en minusculas" class="imagenes-skill">
-            </a> 
-       </div>
+        <!-- Indicadores tecnológicos -->
+        <div class="tech-indicators">
+            <div class="indicator">
+                <span class="indicator-dot"></span>
+                <span>SYSTEM ONLINE</span>
+            </div>
+            <div class="indicator">
+                <span class="indicator-dot"></span>
+                <span>READY FOR CODING</span>
+            </div>
+        </div>
     </section>
-   
-    <section id="presucosto" class="contenedor " style="padding-top:50px;">
-            <div>
-                    <hr>
-                    <h2>
-                    <span>P</span>resu<span>C</span>osto
+    <!-- Contenido principal -->
+    <main class="main-content">
+        <!-- Sección Sobre Mí -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <h2 class="section-title">
+                    <span>S</span>obre <span>M</span>í
+                </h2>
+                <div class="about-tech-container">
+                    <div class="about-content">
+                        <div class="code-window">
+                            <div class="code-header">
+                                <span class="file-name">about_cesar.py</span>
+                                <div class="code-controls">
+                                    <span class="lang-badge">Python</span>
+                                </div>
+                            </div>
+                            <div class="code-body">
+                                <pre><code><span class="line-number">1</span>  <span class="keyword">class</span> <span class="class-name">CesarBravo</span>:
+<span class="line-number">2</span>      <span class="keyword">def</span> <span class="function">__init__</span>(<span class="param">self</span>):
+<span class="line-number">3</span>          <span class="param">self</span>.<span class="property">role</span> = <span class="string">"Analista de Sistemas"</span>
+<span class="line-number">4</span>          <span class="param">self</span>.<span class="property">specialization</span> = [
+<span class="line-number">5</span>              <span class="string">"Desarrollo Web"</span>,
+<span class="line-number">6</span>              <span class="string">"eCommerce & PrestaShop"</span>,
+<span class="line-number">7</span>              <span class="string">"Automatización de Procesos"</span>,
+<span class="line-number">8</span>              <span class="string">"Programación con IA"</span>
+<span class="line-number">9</span>          ]
+<span class="line-number">10</span>         <span class="param">self</span>.<span class="property">skills</span> = {
+<span class="line-number">11</span>             <span class="string">"backend"</span>: [<span class="string">"Python"</span>, <span class="string">"Flask"</span>, <span class="string">"MySQL"</span>],
+<span class="line-number">12</span>             <span class="string">"frontend"</span>: [<span class="string">"HTML5"</span>, <span class="string">"CSS3"</span>, <span class="string">"JavaScript"</span>],
+<span class="line-number">13</span>             <span class="string">"marketing"</span>: [<span class="string">"Google Ads"</span>, <span class="string">"Analytics"</span>]
+<span class="line-number">14</span>         }
+<span class="line-number">15</span> 
+<span class="line-number">16</span>     <span class="keyword">def</span> <span class="function">get_mission</span>(<span class="param">self</span>):
+<span class="line-number">17</span>         <span class="keyword">return</span> <span class="string">"Crear soluciones innovadoras que optimicen"</span> + \
+<span class="line-number">18</span>                <span class="string">" procesos empresariales y mejoren la UX"</span></code></pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-description">
+                        <div class="tech-card">
+                            <h3 class="card-title">
+                                <span class="icon">🎯</span>
+                                Enfoque Técnico
+                            </h3>
+                            <p>Especializado en digitalización de procesos y desarrollo de soluciones personalizadas. Mi experiencia abarca desde desarrollo web completo hasta automatización inteligente con IA.</p>
+                        </div>
+                        <div class="tech-card">
+                            <h3 class="card-title">
+                                <span class="icon">🚀</span>
+                                Innovación Constante
+                            </h3>
+                            <p>Siempre explorando nuevas tecnologías, desde eCommerce avanzado con PrestaShop hasta marketing digital con Google Ads y análisis profundo con Google Analytics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Habilidades -->
+        <section class="skills-section" id="habilidades">
+            <div class="container">
+                <h2 class="section-title">
+                    <span>H</span>abilidades
+                </h2>
+                <div class="skills-grid">
+                    <div class="skill-item" data-skill="HTML">
+                        <img src="img/file_type_html_icon_130541.png" alt="Logo HTML5" class="skill-icon" loading="lazy">
+                        <span class="skill-name">HTML5</span>
+                    </div>
+                    <div class="skill-item" data-skill="CSS">
+                        <img src="img/5351-css3_102605.png" alt="Logo CSS3" class="skill-icon" loading="lazy">
+                        <span class="skill-name">CSS3</span>
+                    </div>
+                    <div class="skill-item" data-skill="JavaScript">
+                        <img src="img/javascript_icon_130900.png" alt="Logo JavaScript" class="skill-icon" loading="lazy">
+                        <span class="skill-name">JavaScript</span>
+                    </div>
+                    <div class="skill-item" data-skill="MySQL">
+                        <img src="img/mysql_official_logo_icon_169938.png" alt="Logo MySQL" class="skill-icon mysql-icon" loading="lazy">
+                        <span class="skill-name">MySQL</span>
+                    </div>
+                    <div class="skill-item" data-skill="Python">
+                        <img src="img/python_104451.png" alt="Logo Python" class="skill-icon" loading="lazy">
+                        <span class="skill-name">Python</span>
+                    </div>
+                    <div class="skill-item" data-skill="Flask">
+                        <img src="img/pocoo_flask_logo_icon_168045.png" alt="Logo Flask" class="skill-icon flask-icon" loading="lazy">
+                        <span class="skill-name">Flask</span>
+                    </div>
+                    <div class="skill-item" data-skill="VS Code">
+                        <img src="img/microsoft_visual_studio_code_alt_macos_bigsur_icon_189951.png" alt="Logo Visual Studio Code" class="skill-icon" loading="lazy">
+                        <span class="skill-name">VS Code</span>
+                    </div>
+                    <div class="skill-item" data-skill="AI Programming">
+                        <div class="ai-icon">
+                            <svg width="70" height="70" viewBox="0 0 24 24" fill="none" class="skill-icon">
+                                <circle cx="12" cy="12" r="10" fill="#fcd602"/>
+                                <path d="M8 12h8M12 8v8" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+                                <circle cx="8" cy="8" r="1.5" fill="#000"/>
+                                <circle cx="16" cy="8" r="1.5" fill="#000"/>
+                                <circle cx="8" cy="16" r="1.5" fill="#000"/>
+                                <circle cx="16" cy="16" r="1.5" fill="#000"/>
+                            </svg>
+                        </div>
+                        <span class="skill-name">Programador IA</span>
+                    </div>
+                                <path d="M10 14.5c1 1 3 1 4 0" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span class="skill-name">IA Programming</span>
+                    </div>
+                </div>
+                
+                <div class="skills-details">
+                    <ul class="skills-list">
+                        <li><strong>Desarrollo Web:</strong> HTML, CSS, JavaScript, Python</li>
+                        <li><strong>Programación con IA:</strong> Desarrollo asistido por IA, ChatGPT, GitHub Copilot</li>
+                        <li><strong>Plataformas eCommerce:</strong> PrestaShop</li>
+                        <li><strong>Marketing Digital:</strong> Google Ads, Facebook Ads</li>
+                        <li><strong>Análisis de Datos:</strong> Google Analytics</li>
+                        <li><strong>Diseño Gráfico:</strong> Photoshop</li>
+                        <li><strong>Automatización de Procesos:</strong> Integración de APIs</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Sección Formación -->
+        <section class="education-section" id="formacion">
+            <div class="container">
+                <h2 class="section-title">
+                    <span>F</span>ormación
+                </h2>
+                <div class="education-content">
+                    <div class="education-grid">
+                        <div class="education-item">
+                            <h3>Análisis y desarrollo de sistemas de la información</h3>
+                            <span class="institution">SENA</span>
+                            <span class="year">2021-2024</span>
+                        </div>
+                        <div class="education-item">
+                            <h3>Comportamiento Emprendedor</h3>
+                            <span class="institution">SENA</span>
+                            <span class="year">2022</span>
+                        </div>
+                        <div class="education-item">
+                            <h3>English Dot Works Beginner</h3>
+                            <span class="institution">SENA</span>
+                            <span class="year">2022</span>
+                        </div>
+                        <div class="education-item">
+                            <h3>Curso de PrestaShop para eCommerce</h3>
+                            <span class="institution">Udemy</span>
+                            <span class="year">2023</span>
+                        </div>
+                        <div class="education-item">
+                            <h3>Curso de Google Ads</h3>
+                            <span class="institution">Google</span>
+                            <span class="year">2023</span>
+                        </div>
+                        <div class="education-item">
+                            <h3>Confección y publicación de páginas web</h3>
+                            <span class="institution">CEBANC</span>
+                            <span class="year status">Cursando...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Portafolio -->
+        <section class="portfolio-section" id="portafolio">
+            <div class="container">
+                <h2 class="section-title">
+                    <span>M</span>is <span>P</span>royectos
+                </h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <a href="#presucosto" class="portfolio-link" aria-label="Ver proyecto PresuCosto">
+                            <div class="portfolio-image">
+                                <img src="img/logo-presucosto.png" alt="Logo de PresuCosto" class="project-logo" loading="lazy">
+                            </div>
+                            <div class="portfolio-info">
+                                <h3>PresuCosto</h3>
+                                <p>Plataforma de gestión de presupuestos</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección detalle del proyecto PresuCosto -->
+        <section class="project-detail-section" id="presucosto">
+            <div class="container">
+                <header class="project-header">
+                    <h2 class="section-title">
+                        <span>P</span>resu<span>C</span>osto
                     </h2>
-                    <hr>
-            </div>
-            <div class="contenedor-slider">
-                <button class="slider-btn prev">&#10094;</button>
-                <button class="expand-slider-btn" aria-label="Ampliar slider">&#128470;</button>
-                <div class="slider">
-                            <!-- <div class="slider-img">
-                                <img src="/img/presucosto/01-inicio.gif" alt="Área de registro a presucosto">
-                                <p>Inicio</p>
-                            </div> -->
-                            <div class="slider-img">
-                                <img src="/img/presucosto/02-Registro.png" alt="Área de registro a presucosto">
-                                <p>Panel de registro con su correo, nombre de usuario y clave. Puede fácilmente crear una cuenta.</p>
-                            </div>
-                            <div class="slider-img">
-                                <img src="/img/presucosto/03-Validacion de formulario.png" alt="Área de inicio de sesión a presucosto">
-                                <p>Validación de formulario para iniciar sesión de forma segura.</p>
-                            </div>
-                            <div class="slider-img">
-                                <img src="/img/presucosto/04-Ingreso datos de la empresa y actualizar.png" alt="Panel de control de presucosto">
-                                <p>Ingreso y actualización de datos de la empresa desde el panel de control.</p>
-                            </div>
-                            <div class="slider-img">
-                                <img src="/img/presucosto/05-Administracion Imprevistos Utilidad.png" alt="Lista de presupuestos en presucosto">
-                                <p>Administración de imprevistos y utilidades en la lista de presupuestos.</p>
-                            </div>
-                            <div class="slider-img">
-                                <img src="/img/presucosto/06-Prestaciones.png" alt="Editar presupuesto en presucosto">
-                                <p>Edición de prestaciones y detalles del presupuesto.</p>
-                            </div>
-                            <div class="slider-img">
-                                <img src="/img/presucosto/07-Crear nueva mano de obra o modificar la existente.png" alt="Enviar presupuesto en presucosto">
-                                <p>Crear o modificar mano de obra</p>
-                            </div>
-                            
-            </div>
-            <button class="slider-btn next">&#10095;</button>
-            </div>
-    </section>
-    <section class="contenedor">
-        <article class="centrado-texto">
-            <p>Presucosto es una plataforma de gestión de presupuestos que permite a los usuarios crear, editar y enviar presupuestos personalizados a sus clientes. Con una interfaz intuitiva y fácil de usar, Presucosto facilita la administración de presupuestos y mejora la comunicación con los clientes.</p>
-            <p>Características destacadas:</p>
-            <ul>
-                <li>Creación y edición de presupuestos personalizados</li>
-                <li>Envío de presupuestos por correo electrónico</li>
-                <li>Seguimiento del estado de los presupuestos enviados</li>
-                <li>Integración con herramientas de gestión empresarial</li>
-                <li>analisis de costos y gastos</li>
-            </ul>
-        </article>
-     </section>
-     <!-- ...tu slider aquí... -->
-<div id="fullscreen-slider-modal" class="fullscreen-slider-modal">
-    <button class="close-fullscreen-slider" aria-label="Cerrar slider ampliado">&#10006;</button>
-    <div class="slider slider-fullscreen"></div>
-    <button class="slider-btn prev">&#10094;</button>
-    <button class="slider-btn next">&#10095;</button>
-</div>
-   
-    <footer>
+                </header>
+                
+                <div class="project-slider-container">
+                    <button class="slider-btn prev" aria-label="Imagen anterior">&#10094;</button>
+                    <button class="expand-slider-btn" aria-label="Ampliar slider">&#128470;</button>
+                    <div class="project-slider">
+                        <div class="slider-img">
+                            <img src="img/presucosto/02-Registro.png" alt="Panel de registro de PresuCosto" loading="lazy">
+                            <p>Panel de registro con su correo, nombre de usuario y clave. Puede fácilmente crear una cuenta.</p>
+                        </div>
+                        <div class="slider-img">
+                            <img src="img/presucosto/03-Validacion de formulario.png" alt="Validación de formulario de PresuCosto" loading="lazy">
+                            <p>Validación de formulario para iniciar sesión de forma segura.</p>
+                        </div>
+                        <div class="slider-img">
+                            <img src="img/presucosto/04-Ingreso datos de la empresa y actualizar.png" alt="Panel de control de PresuCosto" loading="lazy">
+                            <p>Ingreso y actualización de datos de la empresa desde el panel de control.</p>
+                        </div>
+                        <div class="slider-img">
+                            <img src="img/presucosto/05-Administracion Imprevistos Utilidad.png" alt="Administración de imprevistos en PresuCosto" loading="lazy">
+                            <p>Administración de imprevistos y utilidades en la lista de presupuestos.</p>
+                        </div>
+                        <div class="slider-img">
+                            <img src="img/presucosto/06-Prestaciones.png" alt="Gestión de prestaciones en PresuCosto" loading="lazy">
+                            <p>Edición de prestaciones y detalles del presupuesto.</p>
+                        </div>
+                        <div class="slider-img">
+                            <img src="img/presucosto/07-Crear nueva mano de obra o modificar la existente.png" alt="Gestión de mano de obra en PresuCosto" loading="lazy">
+                            <p>Crear o modificar mano de obra</p>
+                        </div>
+                    </div>
+                    <button class="slider-btn next" aria-label="Siguiente imagen">&#10095;</button>
+                </div>
 
+                <article class="project-description">
+                    <div class="description-content">
+                        <p>PresuCosto es una plataforma de gestión de presupuestos que permite a los usuarios crear, editar y enviar presupuestos personalizados a sus clientes. Con una interfaz intuitiva y fácil de usar, PresuCosto facilita la administración de presupuestos y mejora la comunicación con los clientes.</p>
+                        
+                        <h3>Características destacadas:</h3>
+                        <ul class="features-list">
+                            <li>Creación y edición de presupuestos personalizados</li>
+                            <li>Envío de presupuestos por correo electrónico</li>
+                            <li>Seguimiento del estado de los presupuestos enviados</li>
+                            <li>Integración con herramientas de gestión empresarial</li>
+                            <li>Análisis de costos y gastos</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <!-- Modal fullscreen para slider -->
+    <div id="fullscreen-slider-modal" class="fullscreen-slider-modal" role="dialog" aria-labelledby="fullscreen-title" aria-hidden="true">
+        <button class="close-fullscreen-slider" aria-label="Cerrar slider ampliado">&#10006;</button>
+        <div class="slider slider-fullscreen" id="fullscreen-title"></div>
+        <button class="slider-btn prev" aria-label="Imagen anterior">&#10094;</button>
+        <button class="slider-btn next" aria-label="Siguiente imagen">&#10095;</button>
+    </div>
+   
+    <!-- Footer -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <p>&copy; 2024 César Bravo. Todos los derechos reservados.</p>
+        </div>
     </footer>
    
-    <script src="/js/main.js"></script>
+    <script src="js/main-tech.js"></script>
 </body>
 </html>
