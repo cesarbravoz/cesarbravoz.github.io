@@ -1672,9 +1672,26 @@ body::after {
         padding: 0 var(--spacing-sm);
     }
     
+    /* Arreglo para centrar la foto en móvil */
+    .profile-photo-container {
+        width: 132px;
+        height: 132px;
+    }
+    
+    .profile-photo-container::before {
+        width: 132px;
+        height: 132px;
+    }
+    
     .profile-photo-tech {
         width: 120px;
         height: 120px;
+    }
+    
+    /* Arreglo para el desbordamiento del código en móvil */
+    .code-body {
+        font-size: 1.1rem;
+        padding: var(--spacing-sm);
     }
     
     .tech-name {
@@ -1702,6 +1719,45 @@ body::after {
     .info-panel,
     .stats-panel {
         padding: var(--spacing-md);
+    }
+    
+    /* Ajustes adicionales para la foto en móviles pequeños */
+    .profile-photo-container {
+        width: 112px;
+        height: 112px;
+    }
+    
+    .profile-photo-container::before {
+        width: 112px;
+        height: 112px;
+    }
+    
+    .profile-photo-tech {
+        width: 100px;
+        height: 100px;
+        top: 6px;
+        left: 6px;
+    }
+    
+    /* Mejoras para el código en móviles pequeños */
+    .code-body {
+        font-size: 1rem;
+        padding: var(--spacing-xs);
+        line-height: 1.4;
+    }
+    
+    .file-name {
+        font-size: 1.1rem;
+    }
+    
+    .code-header {
+        padding: var(--spacing-xs) var(--spacing-sm);
+    }
+    
+    /* Mejora del contenedor about en móviles pequeños */
+    .about-tech-container {
+        gap: var(--spacing-md);
+        padding: 0 var(--spacing-xs);
     }
     
     .stat-number {
