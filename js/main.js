@@ -1,6 +1,27 @@
 /**
- * César Bravo - Sitio Web Tecnológico
- * JavaScript moderno con efectos futuristas y animaciones avanzadas
+ * ===============================================
+ * 🚀 CÉSAR BRAVO - PORTFOLIO TECNOLÓGICO
+ * ===============================================
+ * 
+ * @file main.js
+ * @description JavaScript principal para efectos interactivos y animaciones
+ * @version 3.0
+ * @author César Bravo
+ * 
+ * Funcionalidades:
+ * - Efectos de escritura automática (typewriter)
+ * - Contadores animados con IntersectionObserver
+ * - Barras de progreso de habilidades
+ * - Navegación suave y scroll effects
+ * - Slider de proyectos con controles táctiles
+ * - Menú móvil responsive
+ * - Optimizaciones de performance
+ * 
+ * Dependencias:
+ * - Intersection Observer API
+ * - CSS Custom Properties
+ * - Modern ES6+ features
+ * ===============================================
  */
 
 'use strict';

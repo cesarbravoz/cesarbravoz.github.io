@@ -1,6 +1,25 @@
 /**
- * César Bravo - Sitio Web Tecnológico
- * JavaScript moderno con efectos futuristas y animaciones avanzadas
+ * ===============================================
+ * 🎮 CÉSAR BRAVO - EFECTOS TECNOLÓGICOS
+ * ===============================================
+ * 
+ * @file main-tech.js
+ * @description Efectos avanzados y animaciones tecnológicas futuristas
+ * @version 3.0
+ * @author César Bravo
+ * Efectos incluidos:
+ * - Partículas flotantes en el background
+ * - Efectos holográficos y glitch
+ * - Animaciones de escaneo y matriz
+ * - Grid tecnológico animado
+ * - Efectos de terminal y código
+ * - Transiciones suaves entre secciones
+ * 
+ * Performance:
+ * - RequestAnimationFrame para animaciones fluidas
+ * - Throttling en eventos de scroll/resize
+ * - Lazy loading de efectos pesados
+ * ===============================================
  */
 
 'use strict';
